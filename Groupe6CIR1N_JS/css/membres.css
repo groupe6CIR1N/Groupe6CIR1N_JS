@@ -1,0 +1,122 @@
+.carte{
+    border: solid 1px white;
+    border-radius: 5%;
+    background-color: rgb(220, 220,220);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 30%;
+}
+
+.tete{
+    border-radius: 100%;
+    width: 30%;
+    height: 30%;
+    margin: 5%;
+}
+
+.tete1{
+    border-radius: 100%;
+    max-width: 30%;
+    max-height: 60%;
+    margin: 5%;
+}
+
+.tete2{
+    border-radius: 100%;
+    width: 30%;
+    height: 60%;
+    margin: 5%;
+}
+
+.tete3{
+    border-radius: 100%;
+    width: 30%;
+    height: 60%;
+    margin: 5%;
+}
+
+
+.carte a img{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+}
+
+.lien2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.lien2 a{
+    margin: 0;
+}
+
+.chercheur{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+}
+
+.name{
+    font-size: large;
+    margin: 10px;
+}
+
+.attribut{
+    margin: 5px;
+    color: rgb(150, 150, 150);
+}
+
+.carte2{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px white;
+    border-radius: 5%;
+    background-color: rgb(220, 220,220);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 30%;
+}
+
+.reste{
+    display: flex;
+    flex-direction:row ;
+}
+
+li{
+    margin: 5px;
+}
+
+.titre{
+    color: rgb(200,200,200);
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 1%;
+}
+
+.carte:hover{
+    background-color: white;
+    border-color: black;
+}
+
+.carte2:hover{
+    background-color: white;
+    border-color: black;
+}
+
+@media screen and (max-width:1400px){
+    .chercheur{
+        font-size: 0.8em;
+    }
+
+    .reste{
+        font-size: 0.8em;
+    }
+
+}

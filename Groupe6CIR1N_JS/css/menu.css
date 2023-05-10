@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: arial;
+}
+
+body header{
+    color:black;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+}
+
+header{
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 50px;
+    display: flex;
+}
+
+header li{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background-color: rgb(200, 200, 200);
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(220, 220, 220);
+    width: 200px;
+}
+
+header li a{
+    display: block;
+    padding: 10px;
+}
+
+header li:hover{
+    background-color: white;
+    color: black;
+}
+
+header li:hover .sub-menu{
+    display: inline-block;
+    z-index: 1;
+    padding-inline-start: 0px;
+    padding: 10px;
+    border: 1px white solid;
+    border-radius: 10%;
+}
+
+header ul li a{
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu li{
+    display: block;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10%;
+    margin: 0;
+    border: 1px solid ;
+    border-color: rgb(220, 220, 220);
+    margin-bottom: 2px;
+}
+
+.sub-menu li:hover li{
+    background-color: white;
+    
+}
+
+header li img{
+    width: 25px;
+    height: 25px;
+}
+
+.logo{
+    margin: 10px;
+    width: 170px;
+    height: 50px;
+}
+
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute ;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+
+.mobile-menu{
+    margin-left: 0;
+    
+}
+
+@media screen and (max-width:1400px) {
+
+    footer{
+        font-size: 0.8em;
+    }
+
+    header{
+        background-color: rgb(220, 220, 220);
+    }
+
+    .sub-menu li a{
+        background-color: rgb(220,220,220);
+        margin-top: -70px;
+        margin-bottom: 50px;
+    }
+
+    .sub-menu li:hover a{
+        background-color: white;
+    }
+    
+    .navbar{
+        padding: 0;
+    }
+    
+    .sub-menu li{
+        display: none;
+    }
+    
+    .navbar .menu-hamburger{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        padding-bottom: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -200%;
+        transition: all 0.5s ease;
+        padding-bottom: 20em;
+    }
+    
+    .nav-links.mobile-menu{
+        margin: 0;
+    }
+    
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar .nav-links{
+        background-color: rgb(220, 220, 220);
+    }
+    
+    .navbar .nav-links ul li{
+        top: 50px;
+        background-color: rgb(220, 220, 220);
+        border-radius: 0;
+        margin: 0;
+        margin: 25px 0px;
+        font-size: 1.2em;
+    }
+    .navbar .nav-links ul li.active a{
+        font-weight: bold;
+    }
+    
+    .navbar .nav-links ul li:hover{
+        background-color: white;
+    }
+    
+    .navbar .nav-links ul li:hover .sub-menu li{
+        display: block;
+    }
+    
+    .logo{
+        margin-top:40px;
+        margin-left: 50px;
+    }
+
+    .sub-menu{
+        display: block;
+        position: absolute;
+        font-size: 0.8em;
+        
+    }
+    
+    header li .sub-menu{
+        display:block;
+        z-index: 1;
+
+
+    }
+    header li hr{
+        display:none;
+    }
+    
+}
+
+footer{
+    border-top: 1px solid white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+}
+
+.lien{
+    display: flex;
+    flex-direction: column;
+}
+
+.lien a {
+    color:black;
+    text-align: left;
+}
+
+.lien a:hover{
+    color: white;
+}
+
+
+footer .linkedin{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .linkedin a{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+footer img{
+    width: 50px;
+    height: 50px;
+}

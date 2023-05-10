@@ -1,0 +1,58 @@
+div{
+    border: 1px solid white;
+    background-color: rgb(220,220,220);
+    border-radius: 10%;
+    width: 80%;
+}
+
+.titre{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(200,200,200);
+    margin-bottom: 50px;
+}
+
+.desc{
+    margin: 50px;
+}
+
+.post{
+    margin: 50px;
+    margin-top: 0px;
+}
+
+.offre{
+    list-style: none;
+    margin: 20px;
+}
+
+.offre li{
+    display: flex;
+    align-items: center;
+}
+
+.offre li img{
+    width: 25px;
+    height: 25px;
+}
+
+dl{
+    margin: 50px;
+}
+
+dl dt{
+    margin-bottom: 10px;
+}
+
+dl dd{
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:1400px){
+
+    div{
+        font-size: 0.8em;
+    }
+
+}

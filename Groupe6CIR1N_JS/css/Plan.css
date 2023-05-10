@@ -1,0 +1,57 @@
+.carte{
+    border: 2px solid white;
+    width: 70%;
+    background-color: rgb(200,200,200);
+    border-radius: 10%;
+    margin: 0px 100px;
+}
+
+.colone{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+p{
+    text-align: center;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contenu{
+    padding: 30px;
+}
+
+.titre{
+    font-size: 1.4em ;
+    margin-bottom: 5px;
+}
+
+dd{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.carte ul li{
+    margin-left: 50px ;
+}
+
+.carte:hover{
+    background-color: white;
+    border-color: black;
+}
+
+@media screen and (max-width:1400px){
+    .contenu{
+        font-size: 0.8em;
+    }
+
+    .colone{
+        flex-direction: column;
+    }
+
+    .carte{
+        margin-bottom: 50px;
+    }
+}

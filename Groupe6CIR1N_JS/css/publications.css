@@ -1,0 +1,49 @@
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media screen and (max-width:1000px) {
+    .page{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width:1400px) {
+    .page{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+div ul li{
+    margin: 2%;
+    text-align: center;
+}
+.page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+div ul li a{
+    color: black;
+    font-size: 120% ;
+}
+
+.revue{
+    list-style-type: square;
+    color: blue;
+}
+
+.congres{
+    list-style-type: square;
+    color: rgb(233, 0, 202);
+}
+
+@media screen and (max-width:1400px){
+
+    div{
+        font-size: 0.8em;
+    }
+    
+}

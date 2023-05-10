@@ -1,0 +1,60 @@
+.txt1{
+    border: 2px solid white;
+    width: 60%;
+    border-radius: 10%;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.txt2{
+    border: 2px solid white;
+    width: 60%;
+    border-radius: 10%;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.image1{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    display: inline;
+}
+
+.image2{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    display: inline;
+}
+
+div{
+    text-align: center;
+}
+
+dt{
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+dd{
+    text-align: left;
+    padding: 20px;
+}
+
+.txt1:hover{
+    border-color: black;
+    background-color: white;
+}
+
+.txt2:hover{
+    border-color: black;
+    background-color: white;
+}

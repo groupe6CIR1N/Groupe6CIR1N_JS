@@ -1,0 +1,92 @@
+.nat{
+    display: flex;
+    justify-content: center;
+}
+
+.inter{
+    display: flex;
+    justify-content: center;
+}
+
+.inter a img{
+    width: 100%;
+    margin-left: 10px;
+    margin: 20px;
+}
+
+
+.titre {
+    text-align: center;
+    font-size: 150%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+.un{
+    width: 100px;
+    height: 100px;
+}
+
+.deux{
+    width: 100px;
+    height: 100px;
+}
+
+.trois{
+    width: 100px;
+    height: 100px;
+}
+
+.quatre{
+    width: 100px;
+    height: 100px;
+}
+
+.cinq{
+    width: 100px;
+    height: 100px;
+}
+
+.six{
+    width: 100px;
+    height: 100px;
+}
+
+.sept{
+    width: 100px;
+    height: 100px;
+}
+
+.huit{
+    width: 100px;
+    height: 100px;
+}
+
+.neuf{
+    width: 100px;
+    height: 100px;
+}
+
+.dix{
+    width: 100px;
+    height: 100px;
+}
+
+.entreprise p{
+    border: 1px solid white;
+    border-radius: 10%;
+    text-align: center;
+    background-color: rgb(220, 220, 220);
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:1400px){
+    
+    .nat{
+        font-size: 0.8em;
+    }
+
+    .int{
+        font-size: 0.8em ;
+    }
+}
