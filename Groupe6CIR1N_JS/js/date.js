@@ -1,4 +1,5 @@
 function Date(){
-    var now = new Date();
-    console.log(now);
+    console.log(document.getHours());
+    console.log(document.getMinutes());
+    console.log(document.getSeconds());
 }
