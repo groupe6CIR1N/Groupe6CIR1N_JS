@@ -6,13 +6,14 @@
     <title> Accueil </title>
     <link href="../css/menu.css" rel="stylesheet">
     <link href="../css/Accueil.css" rel="stylesheet">
+    <script src="../js/date.js" defer></script>
 </head>
 
 
 <body>
     <header>
         <nav class="navbar">
-            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN">
+            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN" onclick="toAccueil()">
             <nav class="nav-links">
                 <ul>
                     <li>
@@ -59,7 +60,20 @@
             </nav>
             <img src="../image/boutton-menu.png" alt="menu hamburger" class="menu-hamburger">
         </nav>
-        <script src="../js/date.js"></script>
+        <div class="date">
+            <p id="hours-d"></p>
+            <p>:</p>
+            <p id="minutes-d"></p>
+            <p>:</p>
+            <p id="seconds-d"></p>
+        </div>
+        <div class="timer">
+            <p id="hours-t"></p>
+            <p>:</p>
+            <p id="minutes-t"></p>
+            <p>:</p>
+            <p id="seconds-t"></p>
+        </div>
     </header>
 
     <div class="contenu">
