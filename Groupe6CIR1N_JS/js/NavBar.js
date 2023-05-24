@@ -15,25 +15,28 @@ function TheDate(){
     document.getElementById("seconds-d").innerHTML = seconds;
 }
 
-function timer(){
-    let time = new Date()
-
-    let hours = time.getHours();
-    let minutes = time.getMinutes();
-    let seconds = time.getSeconds();
-
-    setInterval(()=>{
-    let hours2 = time.getHours();
-    let minutes2 = time.getMinutes();
-    let seconds2 = time.getSeconds(); 
-
-    document.getElementById("hours-t").innerHTML =  hours2 - hours;
-    document.getElementById("minutes-t").innerHTML =  minutes2 - minutes;
-    document.getElementById("seconds-t").innerHTML = seconds2 - seconds;
-    },1000
-    );
-
-}
+function timer() {
+    let startTime = new Date(); // Moment de démarrage
+  
+    setInterval(() => {
+      let currentTime = new Date(); // Moment actuel
+  
+      let timeDifference = currentTime - startTime; // Différence de temps en millisecondes
+  
+      let seconds = Math.floor(timeDifference / 1000); // Conversion en secondes
+  
+      let hours = Math.floor(seconds / 3600); // Calcul des heures
+      seconds %= 3600; // Secondes restantes après avoir calculé les heures
+  
+      let minutes = Math.floor(seconds / 60); // Calcul des minutes
+      seconds %= 60; // Secondes restantes après avoir calculé les minutes
+  
+      // Affichage du temps écoulé dans les éléments HTML correspondants
+      document.getElementById("hours-t").innerHTML = hours;
+      document.getElementById("minutes-t").innerHTML = minutes;
+      document.getElementById("seconds-t").innerHTML = seconds;
+    }, 1000);
+  }
 
 function toAccueil(){
     document.location.href = "../html/Accueil.html";
@@ -68,9 +71,25 @@ function NavBar(){
 
         setTimeout(Antinavbar,2000);
 }
+function detecterCopie() {
+    document.addEventListener('copy', function(event) {
+      event.preventDefault();
+      alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
+     });
+  }
+  
+function detecterCopie() {
+  document.addEventListener('copy', function(event) {
+    event.preventDefault();
+    alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
+    console.log("Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.")
+});
+
+}
 
 window.onload = () => {
     main();
     NavBar();
+    detecterCopie()
 }
 
