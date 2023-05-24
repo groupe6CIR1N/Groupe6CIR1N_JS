@@ -14,8 +14,4 @@ function dezoom(){
     diagramme.style.width = "800px";
 };
 
-function translate(){
-    let txt = document.getElementsByClassName("txt")[0];
-};
-
 main();
