@@ -5,60 +5,78 @@
  <title> Thematique </title>
  <link href="../css/menu.css" rel="stylesheet">
  <link href="../css/Thematique.css" rel="stylesheet">
+ <script src="../js/NavBar.js" defer></script>
  </head>
 
 
  <body>
     <header>
         <nav class="navbar">
-            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN">
+            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN" onclick="toAccueil()">
             <nav class="nav-links">
                 <ul>
                     <li>
-                        <a href="Accueil.html"><img src="../image/Accueil.png">Accueil</a>
+                        <a href="Accueil.html" id="1"><img src="../image/Accueil.png">Accueil</a>
                     </li>
                     <li>
                         <a href="#"><img src="../image/Recherche.png">Recherche</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="Thematique.html"> Thématiques de Recherche</a>
+                                <a href="Thematique.html" id="2"> Thématiques de Recherche</a>
                             </li>
                             <li>
-                                <a href="Plateformes.html"> Plateformes technologiques</a>
+                                <a href="Plateformes.html" id="3"> Plateformes technologiques</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="Membres.html"><img src="../image/Membres.png">Membres</a>
+                        <a href="Membres.html" id="4"><img src="../image/Membres.png">Membres</a>
                     </li>
                     <li>
-                        <a href="Projets.html"><img src="../image/Projets.png">Projets</a>
+                        <a href="Projets.html" id="5"><img src="../image/Projets.png">Projets</a>
                     </li>
                     <li>
-                        <a href="Publications.html"><img src="../image/Publications.png">Publications</a>
+                        <a href="Publications.html" id="6"><img src="../image/Publications.png">Publications</a>
                     </li>
                     <li>
-                        <a href="Partenaires.html"><img src="../image/Partenaires.png">Partenaires</a>
+                        <a href="Partenaires.html" id="7"><img src="../image/Partenaires.png">Partenaires</a>
                     </li>
                     <li>
                         <a href="#" class="dernier"><img src="../image/Infos.png">Infos et Contacts</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="Contactez.html"> Contactez-nous</a>
+                                <a href="Contactez.html" id="8"> Contactez-nous</a>
                             </li>
                             <li>
-                                <a href="Plan.html"> Plan d'accès</a>
+                                <a href="Plan.html" id="9"> Plan d'accès</a>
                             </li>
                             <li>
-                                <a href="Offres.html"> Offres d'emploi</a>
+                                <a href="Offres.html" id="10"> Offres d'emploi</a>
                             </li>
                         </ul>
                     </li>
-            </ul>
+                </ul>
             </nav>
             <img src="../image/boutton-menu.png" alt="menu hamburger" class="menu-hamburger">
+        
+            <div class="date">
+                <p id="hours-d"></p>
+                <p>:</p>
+                <p id="minutes-d"></p>
+                <p>:</p>
+                <p id="seconds-d"></p>
+            </div>
+            <div class="timer">
+                <p id="hours-t"></p>
+                <p>:</p>
+                <p id="minutes-t"></p>
+                <p>:</p>
+                <p id="seconds-t"></p>
+            </div>
         </nav>
     </header>
+
+    <div class="lds-heart"><div></div></div>
 
     <div class="contenu">
         <h1><p>Les thématiques de recherches</p></h1>
@@ -75,7 +93,8 @@
                 <dd>Interprétation de données (data mining) à base d’analyse statistique et d’apprentissage automatique. L’utilisation de capteurs hétérogènes apporte des avantages en termes de pertinence d’informations produites à travers la fusion de données et l’analyse multivariée. De plus, pour la réalisation de prototypes, les notions d’Adéquation Algorithme/Architecture, d’efficacité énergétique et de communications entre les capteurs à l’aide de moyens de communications innovants sont étudiées.</dd>
             </dl>
     </div>
-    <footer>
+
+    <footer class="footer">
         
         <nav class="lien">
             <a href="https://www.google.com/maps/place/ISEN+Nantes/@47.2748661,-1.5137854,15z/data=!3m1!4b1!4m5!3m4!1s0x4805efdb748453c7:0xf9cb0e917832eb00!8m2!3d47.2748664!4d-1.5050521" target="_blank"> 33 Q Avenue du champs de Manoeuvres</a>
@@ -88,6 +107,7 @@
         </nav>
   
     </footer>
+    
  </body>
  <script>
     const menuHamburger = document.querySelector(".menu-hamburger")
