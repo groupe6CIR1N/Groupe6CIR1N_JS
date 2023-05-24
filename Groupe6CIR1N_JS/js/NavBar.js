@@ -77,9 +77,6 @@ function detecterCopie() {
      });
   }
   
-  
-  
-
 function detecterCopie() {
   document.addEventListener('copy', function(event) {
     event.preventDefault();
