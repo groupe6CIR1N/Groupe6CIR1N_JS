@@ -73,16 +73,9 @@ function NavBar(){
 
         setTimeout(Antinavbar,2000);
 }
-function detecterCopie() {
-    document.addEventListener('copy', function(event) {
-      event.preventDefault();
-      alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
-     });
-  }
   
 function detecterCopie() {
-  document.addEventListener('copy', function(event) {
-    event.preventDefault();
+  document.addEventListener('copy', function(event) {//ecoute la copie sur le document 
     alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
     console.log("Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.")
 });
