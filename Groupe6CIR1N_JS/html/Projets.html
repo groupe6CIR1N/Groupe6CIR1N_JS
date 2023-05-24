@@ -5,126 +5,146 @@
  <title> Projets </title>
  <link href="../css/menu.css" rel="stylesheet">
  <link href="../css/Projets.css" rel="stylesheet">
+ <script src="../js/NavBar.js" defer></script>
  </head>
 
 
  <body>
     <header>
         <nav class="navbar">
-            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN">
+            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN" onclick="toAccueil()">
             <nav class="nav-links">
                 <ul>
                     <li>
-                        <a href="Accueil.html"><img src="../image/Accueil.png">Accueil</a>
+                        <a href="Accueil.html" id="1"><img src="../image/Accueil.png">Accueil</a>
                     </li>
                     <li>
                         <a href="#"><img src="../image/Recherche.png">Recherche</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="Thematique.html"> Thématiques de Recherche</a>
+                                <a href="Thematique.html" id="2"> Thématiques de Recherche</a>
                             </li>
                             <li>
-                                <a href="Plateformes.html"> Plateformes technologiques</a>
+                                <a href="Plateformes.html" id="3"> Plateformes technologiques</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="Membres.html"><img src="../image/Membres.png">Membres</a>
+                        <a href="Membres.html" id="4"><img src="../image/Membres.png">Membres</a>
                     </li>
                     <li>
-                        <a href="Projets.html"><img src="../image/Projets.png">Projets</a>
+                        <a href="Projets.html" id="5"><img src="../image/Projets.png">Projets</a>
                     </li>
                     <li>
-                        <a href="Publications.html"><img src="../image/Publications.png">Publications</a>
+                        <a href="Publications.html" id="6"><img src="../image/Publications.png">Publications</a>
                     </li>
                     <li>
-                        <a href="Partenaires.html"><img src="../image/Partenaires.png">Partenaires</a>
+                        <a href="Partenaires.html" id="7"><img src="../image/Partenaires.png">Partenaires</a>
                     </li>
                     <li>
                         <a href="#" class="dernier"><img src="../image/Infos.png">Infos et Contacts</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="Contactez.html"> Contactez-nous</a>
+                                <a href="Contactez.html" id="8"> Contactez-nous</a>
                             </li>
                             <li>
-                                <a href="Plan.html"> Plan d'accès</a>
+                                <a href="Plan.html" id="9"> Plan d'accès</a>
                             </li>
                             <li>
-                                <a href="Offres.html"> Offres d'emploi</a>
+                                <a href="Offres.html" id="10"> Offres d'emploi</a>
                             </li>
                         </ul>
                     </li>
-            </ul>
+                </ul>
             </nav>
             <img src="../image/boutton-menu.png" alt="menu hamburger" class="menu-hamburger">
+        
+            <div class="date">
+                <p id="hours-d"></p>
+                <p>:</p>
+                <p id="minutes-d"></p>
+                <p>:</p>
+                <p id="seconds-d"></p>
+            </div>
+            <div class="timer">
+                <p id="hours-t"></p>
+                <p>:</p>
+                <p id="minutes-t"></p>
+                <p>:</p>
+                <p id="seconds-t"></p>
+            </div>
         </nav>
     </header>
 
-    <p class="titre1"><b>Projets en cours</b></p>
+    <div class="lds-heart"><div></div></div>
 
-    <dl>
-        <img src="../image/transfo digitale.gif">
-        <nav class="texte">
-            <dt class="titre">CASTEL : accompagnement dans la transformation digitale</dt>
-            <dt class="option"><b>Description</b></dt>
-            <dd>Contrat industriel en partenariat avec l’entreprise Castel29. L’objectif de ce travail est d’accompagner l’entreprise dans sa transformation digitale. Le but est de numériser l’environnement de l’entreprise pour améliorer la sécurité de ses employés mais aussi de numériser la chaîne de fabrication. Actuellement, nous travaillons avec l’entreprise sur les possibilités de mise en place de solutions de maintenance prédictive.</dd>
-            <dt class="option"><b>Mot-clés</b></dt>
-            <dd>Usine du futur, IoT, Capteurs, Déploiement</dd>
-            <dt class="option"><b>Partenaires</b></dt>
-            <dd>Castel29</dd>
-            <dt class="option"><b>Rôle de l'équipe projet</b></dt>
-            <dd>Montage, coordination, dimensionnement, réalisation.</dd>
-        </nav>
-    </dl>
+    <div class="contenu">
+        <p class="titre1"><b>Projets en cours</b></p>
 
-    <dl>
-        <img src="../image/Sous matins autonome.jpg">
-        <nav class="texte">
-            <dt class="titre">VISEMAR  : amélioration des performances des drones autonomes sous-marins par vision</dt>
-            <dt class="option"><b>Description</b></dt>
-            <dd>Dans le cadre du programme régional Systèmes Autonomes en Milieu Maritime (SAMM), nous collaborons avec Thales comme partenaire industriel et le Lab-STICC via le projet intitulé : « Système de VISion Embarqué pour l’amélioration de l’autonomie des drones sous-MARins » (VISEMAR). Le projet VISEMAR s’intéresse à l’amélioration des performancesde fonctionnement des drones autonomes sous-marins et donc leur autonomie en embarquant un système de vision doté de fonctions d’apprentissage, d’analyse de scène, de prise de décision et de communications</dd>
-            <dt class="option"><b>Mot-clés</b></dt>
-            <dd>Réseaux de neurones, Intelligence embarquée, FPGA, Sous-marin</dd>
-            <dt class="option"><b>Partenaires</b></dt>
-            <dd>Région Bretagne, Thales, Lab-STICC</dd>
-            <dt class="option"><b>Rôle de l'équipe projet</b></dt>
-            <dd> Montage, coordination, dimensionnement, réalisation.</dd>
-        </nav>
-    </dl>
+        <dl>
+            <img src="../image/transfo digitale.gif">
+            <nav class="texte">
+                <dt class="titre">CASTEL : accompagnement dans la transformation digitale</dt>
+                <dt class="option"><b>Description</b></dt>
+                <dd>Contrat industriel en partenariat avec l’entreprise Castel29. L’objectif de ce travail est d’accompagner l’entreprise dans sa transformation digitale. Le but est de numériser l’environnement de l’entreprise pour améliorer la sécurité de ses employés mais aussi de numériser la chaîne de fabrication. Actuellement, nous travaillons avec l’entreprise sur les possibilités de mise en place de solutions de maintenance prédictive.</dd>
+                <dt class="option"><b>Mot-clés</b></dt>
+                <dd>Usine du futur, IoT, Capteurs, Déploiement</dd>
+                <dt class="option"><b>Partenaires</b></dt>
+                <dd>Castel29</dd>
+                <dt class="option"><b>Rôle de l'équipe projet</b></dt>
+                <dd>Montage, coordination, dimensionnement, réalisation.</dd>
+            </nav>
+        </dl>
 
-    <dl>
-        <img src="../image/surveillance faune.jpg">
-        <nav class="texte">
-            <dt class="titre">SEAS : Système d'Étude Autonome et de Surveillance de la faune patrimoniale en milieu protégé</dt>
-            <dt class="option"><b>Description</b></dt>
-            <dd>Conception et développement d’un système d’étude de traitement des phoques dans l’île de Morgol</dd>
-            <dt class="option"><b>Mot-clés</b></dt>
-            <dd>Deep Learning, Traitement devidéos</dd>
-            <dt class="option"><b>Partenaires</b></dt>
-            <dd>AFB, Océanopolis</dd>
-            <dt class="option"><b>Rôle de l'équipe projet</b></dt>
-            <dd>dimensionnement, réalisation</dd>
-        </nav>
-    </dl>
+        <dl>
+            <img src="../image/Sous matins autonome.jpg">
+            <nav class="texte">
+                <dt class="titre">VISEMAR  : amélioration des performances des drones autonomes sous-marins par vision</dt>
+                <dt class="option"><b>Description</b></dt>
+                <dd>Dans le cadre du programme régional Systèmes Autonomes en Milieu Maritime (SAMM), nous collaborons avec Thales comme partenaire industriel et le Lab-STICC via le projet intitulé : « Système de VISion Embarqué pour l’amélioration de l’autonomie des drones sous-MARins » (VISEMAR). Le projet VISEMAR s’intéresse à l’amélioration des performancesde fonctionnement des drones autonomes sous-marins et donc leur autonomie en embarquant un système de vision doté de fonctions d’apprentissage, d’analyse de scène, de prise de décision et de communications</dd>
+                <dt class="option"><b>Mot-clés</b></dt>
+                <dd>Réseaux de neurones, Intelligence embarquée, FPGA, Sous-marin</dd>
+                <dt class="option"><b>Partenaires</b></dt>
+                <dd>Région Bretagne, Thales, Lab-STICC</dd>
+                <dt class="option"><b>Rôle de l'équipe projet</b></dt>
+                <dd> Montage, coordination, dimensionnement, réalisation.</dd>
+            </nav>
+        </dl>
 
-    <p class="titre1"><b>Projets achevés</b></p>
+        <dl>
+            <img src="../image/surveillance faune.jpg">
+            <nav class="texte">
+                <dt class="titre">SEAS : Système d'Étude Autonome et de Surveillance de la faune patrimoniale en milieu protégé</dt>
+                <dt class="option"><b>Description</b></dt>
+                <dd>Conception et développement d’un système d’étude de traitement des phoques dans l’île de Morgol</dd>
+                <dt class="option"><b>Mot-clés</b></dt>
+                <dd>Deep Learning, Traitement devidéos</dd>
+                <dt class="option"><b>Partenaires</b></dt>
+                <dd>AFB, Océanopolis</dd>
+                <dt class="option"><b>Rôle de l'équipe projet</b></dt>
+                <dd>dimensionnement, réalisation</dd>
+            </nav>
+        </dl>
 
-    <dl>
-        <img src="../image/Architecture élec.jpg">
-        <nav class="texte">
-            <dt class="titre">HPeC : architectures électroniques reconfigurables dynamiquement (2019)</dt>
-            <dt class="option"><b>Description</b></dt>
-            <dd>projet ANR porté par Jean-Philippe Diguet du Lab-STICC. L’objectif du projet est de démontrer l’apport des architectures électroniques reconfigurables dynamiquement dans le contexte des drones aériens. Un des lots du projet concerne l’implantation sur FPGA de solution de détection, d’apprentissage et de suivi d’objet en temps-réel.</dd>
-            <dt class="option"><b>Mot-clés</b></dt>
-            <dd>FPGA</dd>
-            <dt class="option"><b>Partenaires</b></dt>
-            <dd>Lab-STICC, Inria, GIPSA-Lab, INPIXAL, Institut Pascal</dd>
-            <dt class="option"><b>Rôle de l'équipe projet</b></dt>
-            <dd>Conseil</dd>
-        </nav>
-    </dl>
+        <p class="titre1"><b>Projets achevés</b></p>
 
-    <footer>
+        <dl>
+            <img src="../image/Architecture élec.jpg">
+            <nav class="texte">
+                <dt class="titre">HPeC : architectures électroniques reconfigurables dynamiquement (2019)</dt>
+                <dt class="option"><b>Description</b></dt>
+                <dd>projet ANR porté par Jean-Philippe Diguet du Lab-STICC. L’objectif du projet est de démontrer l’apport des architectures électroniques reconfigurables dynamiquement dans le contexte des drones aériens. Un des lots du projet concerne l’implantation sur FPGA de solution de détection, d’apprentissage et de suivi d’objet en temps-réel.</dd>
+                <dt class="option"><b>Mot-clés</b></dt>
+                <dd>FPGA</dd>
+                <dt class="option"><b>Partenaires</b></dt>
+                <dd>Lab-STICC, Inria, GIPSA-Lab, INPIXAL, Institut Pascal</dd>
+                <dt class="option"><b>Rôle de l'équipe projet</b></dt>
+                <dd>Conseil</dd>
+            </nav>
+        </dl>
+    </div>
+
+    <footer class="footer">
         
         <nav class="lien">
             <a href="https://www.google.com/maps/place/ISEN+Nantes/@47.2748661,-1.5137854,15z/data=!3m1!4b1!4m5!3m4!1s0x4805efdb748453c7:0xf9cb0e917832eb00!8m2!3d47.2748664!4d-1.5050521" target="_blank"> 33 Q Avenue du champs de Manoeuvres</a>

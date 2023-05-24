@@ -5,177 +5,196 @@
  <title> Membres </title>
  <link href="../css/menu.css" rel="stylesheet">
  <link href="../css/membres.css" rel="stylesheet">
+ <script src="../js/NavBar.js" defer></script>
  </head>
 
 
  <body>
     <header>
         <nav class="navbar">
-            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN">
+            <img class="logo" src="../image/LabISEN3.png" alt="LabISEN" onclick="toAccueil()">
             <nav class="nav-links">
                 <ul>
                     <li>
-                        <a href="Accueil.html"><img src="../image/Accueil.png">Accueil</a>
+                        <a href="Accueil.html" id="1"><img src="../image/Accueil.png">Accueil</a>
                     </li>
                     <li>
                         <a href="#"><img src="../image/Recherche.png">Recherche</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="Thematique.html"> Thématiques de Recherche</a>
+                                <a href="Thematique.html" id="2"> Thématiques de Recherche</a>
                             </li>
                             <li>
-                                <a href="Plateformes.html"> Plateformes technologiques</a>
+                                <a href="Plateformes.html" id="3"> Plateformes technologiques</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="Membres.html"><img src="../image/Membres.png">Membres</a>
+                        <a href="Membres.html" id="4"><img src="../image/Membres.png">Membres</a>
                     </li>
                     <li>
-                        <a href="Projets.html"><img src="../image/Projets.png">Projets</a>
+                        <a href="Projets.html" id="5"><img src="../image/Projets.png">Projets</a>
                     </li>
                     <li>
-                        <a href="Publications.html"><img src="../image/Publications.png">Publications</a>
+                        <a href="Publications.html" id="6"><img src="../image/Publications.png">Publications</a>
                     </li>
                     <li>
-                        <a href="Partenaires.html"><img src="../image/Partenaires.png">Partenaires</a>
+                        <a href="Partenaires.html" id="7"><img src="../image/Partenaires.png">Partenaires</a>
                     </li>
                     <li>
                         <a href="#" class="dernier"><img src="../image/Infos.png">Infos et Contacts</a>
                         <ul class="sub-menu">
                             <li>
-                                <a href="Contactez.html"> Contactez-nous</a>
+                                <a href="Contactez.html" id="8"> Contactez-nous</a>
                             </li>
                             <li>
-                                <a href="Plan.html"> Plan d'accès</a>
+                                <a href="Plan.html" id="9"> Plan d'accès</a>
                             </li>
                             <li>
-                                <a href="Offres.html"> Offres d'emploi</a>
+                                <a href="Offres.html" id="10"> Offres d'emploi</a>
                             </li>
                         </ul>
                     </li>
-            </ul>
+                </ul>
             </nav>
             <img src="../image/boutton-menu.png" alt="menu hamburger" class="menu-hamburger">
+        
+            <div class="date">
+                <p id="hours-d"></p>
+                <p>:</p>
+                <p id="minutes-d"></p>
+                <p>:</p>
+                <p id="seconds-d"></p>
+            </div>
+            <div class="timer">
+                <p id="hours-t"></p>
+                <p>:</p>
+                <p id="minutes-t"></p>
+                <p>:</p>
+                <p id="seconds-t"></p>
+            </div>
         </nav>
     </header>
 
+    <div class="lds-heart"><div></div></div>
 
-    <p class="titre"><b>Ensaignant chercheur permanent</b></p>
-    <div class="chercheur">
+    <div class="contenu">
+        <p class="titre"><b>Ensaignant chercheur permanent</b></p>
+        <div class="chercheur">
 
-        <nav class="carte">
-            <nav class="info">
-                <img class="tete" src="../image/ayoub.jpg" alt="Ayoub Karine">
-                <nav>
-                    <p class="name">Ayoub Karine</p>
-                    <ul>
-                        <li><p>Enseignant chercheur</p></li>
-                        <li><p>ISEN Yncréa Ouest -Nantes</p></li>
-                        <li><a href="mailto:ayoub.karine[at]isen-ouest.ycnrea.fr">ayoub.karine[at]isen-ouest.ycnrea.fr</a></li>
-                    </ul>
-                    <p class="attribut">Image processing, Machine learning, Deep learning, Remote sensing, Computer vision</p>
-                 </nav>
-            </nav>
-            <hr>
-            <nav class="lien2">
-                <a href="https://ayoubkarine.github.io/" target="_blank"><img src="../image/site.png"></a>
-                <a href=" https://www.linkedin.com/in/ayoub-karine-a01ba384" target="_blank"><img src="../image/Linkedin.png"></a>
-                <a href="https://scholar.google.fr/citations?user=acAw9KAAAAAJ&hl=fr" target="_blank"><img src="../image/school.png"></a>
-                <a href="https://www.researchgate.net/profile/Ayoub-Karine" target="_blank"><img src="../image/researchgate.png"></a>
-            </nav>
-        </nav>
-
-        <nav class="carte">
-            <nav class="info">
-                <img class="tete" src="../image/Maher.jfif" alt="Ayoub Karine">
-                <nav>
-                    <p class="name">Maher Jridi</p>
-                    <ul>
-                        <li><p>Enseignant chercheur, HDR</p></li>
-                        <li><p>ISEN Yncréa Ouest -Nantes</p></li>
-                        <li><a href="mailto:maher.jridi[at]isen-ouest.ycnrea.fr">maher.jridi[at]isen-ouest.ycnrea.fr</a></li>      
-                    </ul>      
-                    <p class="attribut">High Performance Embedded Computing, IoT, IoMT, Industrial IoT, Digital VLSI design, Algorithm-Architecture Co-desing</p>
+            <nav class="carte">
+                <nav class="info">
+                    <img class="tete" src="../image/ayoub.jpg" alt="Ayoub Karine">
+                    <nav>
+                        <p class="name">Ayoub Karine</p>
+                        <ul>
+                            <li><p>Enseignant chercheur</p></li>
+                            <li><p>ISEN Yncréa Ouest -Nantes</p></li>
+                            <li><a href="mailto:ayoub.karine[at]isen-ouest.ycnrea.fr">ayoub.karine[at]isen-ouest.ycnrea.fr</a></li>
+                        </ul>
+                        <p class="attribut">Image processing, Machine learning, Deep learning, Remote sensing, Computer vision</p>
+                    </nav>
+                </nav>
+                <hr>
+                <nav class="lien2">
+                    <a href="https://ayoubkarine.github.io/" target="_blank"><img src="../image/site.png"></a>
+                    <a href=" https://www.linkedin.com/in/ayoub-karine-a01ba384" target="_blank"><img src="../image/Linkedin.png"></a>
+                    <a href="https://scholar.google.fr/citations?user=acAw9KAAAAAJ&hl=fr" target="_blank"><img src="../image/school.png"></a>
+                    <a href="https://www.researchgate.net/profile/Ayoub-Karine" target="_blank"><img src="../image/researchgate.png"></a>
                 </nav>
             </nav>
-            <hr>
-            <nav class="lien2">
-                <a href="https://sites.google.com/website/jridimaher/" target="_blank"><img src="../image/site.png"></a>
-                <a href="https://www.linkedin.com/in/maher-jridi-a7861a3a/?originalSubdomain=fr" target="_blank"><img src="../image/Linkedin.png"></a>
-                <a href="https://scholar.google.fr/citations?hl=fr&user=N8Xv4GQAAAAJ" target="_blank"><img src="../image/school.png"></a>
-                <a href=" https://www.researchgate.net/profile/Maher_Jridi" target="_blank"><img src="../image/researchgate.png"></a>
-            </nav>
-        </nav>
 
+            <nav class="carte">
+                <nav class="info">
+                    <img class="tete" src="../image/Maher.jfif" alt="Ayoub Karine">
+                    <nav>
+                        <p class="name">Maher Jridi</p>
+                        <ul>
+                            <li><p>Enseignant chercheur, HDR</p></li>
+                            <li><p>ISEN Yncréa Ouest -Nantes</p></li>
+                            <li><a href="mailto:maher.jridi[at]isen-ouest.ycnrea.fr">maher.jridi[at]isen-ouest.ycnrea.fr</a></li>      
+                        </ul>      
+                        <p class="attribut">High Performance Embedded Computing, IoT, IoMT, Industrial IoT, Digital VLSI design, Algorithm-Architecture Co-desing</p>
+                    </nav>
+                </nav>
+                <hr>
+                <nav class="lien2">
+                    <a href="https://sites.google.com/website/jridimaher/" target="_blank"><img src="../image/site.png"></a>
+                    <a href="https://www.linkedin.com/in/maher-jridi-a7861a3a/?originalSubdomain=fr" target="_blank"><img src="../image/Linkedin.png"></a>
+                    <a href="https://scholar.google.fr/citations?hl=fr&user=N8Xv4GQAAAAJ" target="_blank"><img src="../image/school.png"></a>
+                    <a href=" https://www.researchgate.net/profile/Maher_Jridi" target="_blank"><img src="../image/researchgate.png"></a>
+                </nav>
+            </nav>
+
+        </div>
+
+        <p class="titre"><b>Post-docs</b></p>
+        <div class="reste">
+
+            <nav class="carte2">
+                <img class="tete1" src="../image/Sylvain.jfif" alt="Sylvain Lefebvre">
+                <nav>
+                    <p class="name">Sylvain Lefebvre</p>
+                    <ul>
+                        <li><p>du 01/2022 au 04/2023</p></li>
+                        <li><p>Industrie 4.0</p></li>
+                        <li><p>ISEN Yncréa Ouest –Nantes</p></li>
+                        <li><a href="mailto:sylvain.lefebvre[at]isen-ouest.yncrea.fr">sylvain.lefebvre[at]isen-ouest.yncrea.fr</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+
+        <p class="titre"><b>Doctorants actuels</b></p>
+
+        <div class="reste">
+            <nav class="carte2">
+                <img class="tete2" src="../image/Salima.jfif" alt="Salima Bourbia">
+                <nav>
+                    <p class="name">Salima Bourbia</p>
+                    <ul>
+                        <li><p>depuis le 12/2020</p></li>
+                        <li><p>Ayoub Karine, Maher Jridi</p></li>
+                        <li><p>ISEN Yncréa Ouest –Nantes</p></li>
+                        <li><p>Evaluation de la qualité des nuages de points 3D</p></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+
+            <p class="titre"><b>Anciens doctorants</b></p>
+
+        <div class="reste">
+            <nav class="carte2">
+                <img class="tete3" src="../image/Djamel.jfif" alt="Djamel Benarab">
+                <nav>
+                    <p class="name">Djamel Benarab</p>
+                    <ul>
+                        <li><p>Suivi automatique de nageurs à partir des séquences vidéo : application à l'analyse des performances</p></li>
+                        <li><p>Ayman Alfalou, Thibault Napoléon, Antoine Verney, Philippe Hellard</p></li>
+                        <li><p>Ingénieur R&D chez Diota</p></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+
+            <p class="titre"><b>Stagiaire</b></p>
+
+        <div class="reste">
+            <nav class="carte2">
+                <img class="tete2" src="../image/Salima.jfif" alt="Salima Bourbia">
+                <nav >
+                    <p class="name">Salima Bourbia</p>
+                    <ul>
+                        <li><p>Quality assessment of stereoscopic images using deep learning</p></li>
+                        <li><p>Ayoub Karine, Mohammed EL Hassouni, Aladine Chetouani</p></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
     </div>
 
-    <p class="titre"><b>Post-docs</b></p>
-    <div class="reste">
-
-        <nav class="carte2">
-            <img class="tete1" src="../image/Sylvain.jfif" alt="Sylvain Lefebvre">
-            <nav>
-                <p class="name">Sylvain Lefebvre</p>
-                <ul>
-                    <li><p>du 01/2022 au 04/2023</p></li>
-                    <li><p>Industrie 4.0</p></li>
-                    <li><p>ISEN Yncréa Ouest –Nantes</p></li>
-                    <li><a href="mailto:sylvain.lefebvre[at]isen-ouest.yncrea.fr">sylvain.lefebvre[at]isen-ouest.yncrea.fr</a></li>
-                </ul>
-            </nav>
-        </nav>
-    </div>
-
-    <p class="titre"><b>Doctorants actuels</b></p>
-
-    <div class="reste">
-        <nav class="carte2">
-            <img class="tete2" src="../image/Salima.jfif" alt="Salima Bourbia">
-            <nav>
-                <p class="name">Salima Bourbia</p>
-                <ul>
-                    <li><p>depuis le 12/2020</p></li>
-                    <li><p>Ayoub Karine, Maher Jridi</p></li>
-                    <li><p>ISEN Yncréa Ouest –Nantes</p></li>
-                    <li><p>Evaluation de la qualité des nuages de points 3D</p></li>
-                </ul>
-            </nav>
-        </nav>
-    </div>
-
-        <p class="titre"><b>Anciens doctorants</b></p>
-
-    <div class="reste">
-        <nav class="carte2">
-            <img class="tete3" src="../image/Djamel.jfif" alt="Djamel Benarab">
-            <nav>
-                <p class="name">Djamel Benarab</p>
-                <ul>
-                    <li><p>Suivi automatique de nageurs à partir des séquences vidéo : application à l'analyse des performances</p></li>
-                    <li><p>Ayman Alfalou, Thibault Napoléon, Antoine Verney, Philippe Hellard</p></li>
-                    <li><p>Ingénieur R&D chez Diota</p></li>
-                </ul>
-            </nav>
-        </nav>
-    </div>
-
-        <p class="titre"><b>Stagiaire</b></p>
-
-    <div class="reste">
-        <nav class="carte2">
-            <img class="tete2" src="../image/Salima.jfif" alt="Salima Bourbia">
-            <nav >
-                <p class="name">Salima Bourbia</p>
-                <ul>
-                    <li><p>Quality assessment of stereoscopic images using deep learning</p></li>
-                    <li><p>Ayoub Karine, Mohammed EL Hassouni, Aladine Chetouani</p></li>
-                </ul>
-            </nav>
-        </nav>
-    </div>
-
-    <footer>
+    <footer class="footer">
         
         <nav class="lien">
             <a href="https://www.google.com/maps/place/ISEN+Nantes/@47.2748661,-1.5137854,15z/data=!3m1!4b1!4m5!3m4!1s0x4805efdb748453c7:0xf9cb0e917832eb00!8m2!3d47.2748664!4d-1.5050521" target="_blank"> 33 Q Avenue du champs de Manoeuvres</a>

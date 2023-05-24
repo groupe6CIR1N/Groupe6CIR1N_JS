@@ -1,7 +1,6 @@
 function main(){
     setInterval(TheDate,1000);
     timer();
-    // window.addEventListener('load',NavBar);
 }
 
 function TheDate(){
@@ -61,7 +60,6 @@ function NavBar(){
 
         
         let header = document.getElementsByClassName("navbar")[0];
-        console.log(header);
         header.style.opacity = "0.2"; 
         let footer = document.getElementsByClassName("footer")[0];
         footer.style.opacity = "0.2";

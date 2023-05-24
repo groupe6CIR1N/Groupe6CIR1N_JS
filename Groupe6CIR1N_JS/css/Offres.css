@@ -1,4 +1,4 @@
-div{
+.contenu div{
     border: 1px solid white;
     background-color: rgb(220,220,220);
     border-radius: 10%;
@@ -51,7 +51,7 @@ dl dd{
 
 @media screen and (max-width:1400px){
 
-    div{
+    .contenu div{
         font-size: 0.8em;
     }
 
