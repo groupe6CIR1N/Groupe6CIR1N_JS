@@ -10,9 +10,25 @@ function TheDate(){
     let minutes = time.getMinutes();
     let seconds = time.getSeconds();
 
-    document.getElementById("hours-d").innerHTML = hours;
-    document.getElementById("minutes-d").innerHTML = minutes;
-    document.getElementById("seconds-d").innerHTML = seconds;
+    if(hours < 10){
+        document.getElementById("hours-d").innerHTML = "0" + hours;
+    }
+    else{
+        document.getElementById("hours-d").innerHTML = hours;
+    }
+    if(minutes < 10){
+        document.getElementById("minutes-d").innerHTML = "0"+ minutes;
+    }
+    else{
+        document.getElementById("minutes-d").innerHTML = minutes;  
+    }
+    if(seconds < 10){
+        document.getElementById("seconds-d").innerHTML = "0" + seconds;
+    }
+    else{
+        document.getElementById("seconds-d").innerHTML = seconds;
+    }
+    
 }
 
 function timer() {
@@ -32,9 +48,24 @@ function timer() {
       seconds %= 60; // Secondes restantes après avoir calculé les minutes
   
       // Affichage du temps écoulé dans les éléments HTML correspondants
-      document.getElementById("hours-t").innerHTML = hours;
-      document.getElementById("minutes-t").innerHTML = minutes;
-      document.getElementById("seconds-t").innerHTML = seconds;
+    if(hours < 10){
+        document.getElementById("hours-t").innerHTML = "0" + hours;
+    }
+    else{
+        document.getElementById("hours-t").innerHTML = hours;
+    }
+    if(minutes < 10){
+        document.getElementById("minutes-t").innerHTML = "0"+ minutes;
+    }
+    else{
+        document.getElementById("minutes-t").innerHTML = minutes;  
+    }
+    if(seconds < 10){
+        document.getElementById("seconds-t").innerHTML = "0" + seconds;
+    }
+    else{
+        document.getElementById("seconds-t").innerHTML = seconds;
+    }
     }, 1000);
   }
 

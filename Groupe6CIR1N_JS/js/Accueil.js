@@ -1,6 +1,6 @@
 function main(){
 
-}
+};
 
 function zoom(){
     let diagramme = document.getElementsByClassName("diagramme")[0];
@@ -17,3 +17,5 @@ function dezoom(){
 function translate(){
     let txt = document.getElementsByClassName("txt")[0];
 };
+
+main();
