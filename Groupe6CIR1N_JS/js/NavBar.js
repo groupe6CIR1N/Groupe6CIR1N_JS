@@ -80,6 +80,14 @@ function detecterCopie() {
   
   
 
+function detecterCopie() {
+  document.addEventListener('copy', function(event) {
+    event.preventDefault();
+    alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d'auteur et citer vos sources.');
+  });
+}
+
+
 window.onload = () => {
     main();
     NavBar();
