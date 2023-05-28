@@ -24,8 +24,9 @@ form img{
     background-color:  #ffffff;
 }
 
-imput{
+input{
     margin: 2%;
+    width: 200px;
 }
 
 p input{
@@ -60,4 +61,14 @@ imput{
 footer{
     position: absolute;
     bottom: 0;
+}
+
+.error{
+    color: red;
+    font-size: 8px;
+    padding: 10px;
+}
+
+#boutton{
+    color: red;
 }

@@ -5,6 +5,7 @@
  <title> Contactez </title>
  <link href="../css/menu.css" rel="stylesheet">
  <link href="../css/contactez.css" rel="stylesheet">
+ <script src="../js/Contactez.js" defer></script>
  <script src="../js/NavBar.js" defer></script>
  </head>
 
@@ -87,22 +88,25 @@
                 <div class="allinfo">
                     <div class="info">
                         <img src="../image/perso.png" alt="homme">
-                        <input type="text" name="fname" placeholder="Nom Prénom">
+                        <input type="text" name="name" placeholder="Nom Prénom" id="name">
                     </div>
-
+                    <div class="error">Il n'y a pas votre Prénom et Nom</div>
             
                     <div class="info">
                         <img src="../image/mail.png" alt="mail">
-                        <input type="text" name="fname" placeholder="email@exemple.com">
+                        <input type="text" name="mail" placeholder="email@exemple.com" id="mail">
                     </div>
+                    <div class="error">Il n'y a pas les caractères souhaitez ('@'' et '.')</div>
                 </div>
                 <br>
                 <br>
 
-                <textarea name="contenu" placeholder="Votre message(1000 caractères maximum)"rows="5" cols="50" maxlength="1000"></textarea>
+                <textarea name="contenu" placeholder="Votre message(1000 caractères maximum)"rows="5" cols="50" maxlength="1000" id="text"></textarea>
+                <div class="error">Il n'y a pas assez de caractères</div>
                 </p>
 
-                <p><input type="submit" value="Envoyer"></p>
+                <p><input type="submit" value="Envoyer" id="boutton"></p>
+                
             </form>
         </div> 
     </div>
