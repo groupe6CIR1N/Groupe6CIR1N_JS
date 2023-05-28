@@ -1,6 +1,7 @@
 function main(){
     setInterval(TheDate,1000);
     timer();
+    acces();
 }
 
 function TheDate(){
@@ -109,6 +110,23 @@ function detecterCopie() {
     console.log("Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.")
 });
 
+}
+
+function acces(){
+    let member = document.getElementById('4');
+
+    member.addEventListener('click', ()=>{
+
+        let page = prompt("Voulez vous vraiment naviguer vers cette page ?");
+        
+        if(page.toLowerCase() == "oui"){
+            document.location.href = "../html/Accueil.html";
+        }
+        else{
+            document.location.href = "";
+        }
+
+    })
 }
 
 window.onload = () => {

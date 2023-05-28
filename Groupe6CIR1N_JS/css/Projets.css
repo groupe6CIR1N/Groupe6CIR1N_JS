@@ -40,6 +40,40 @@ dl img{
     height: 30%;
 }
 
+.photo5{
+    display: none;
+}
+
+.photo6{
+    display: none;
+}
+
+.photo7{
+    display: none;
+}
+
+.photo8{
+    display: none;
+}
+
+.btn{
+    height: 50px;
+    width: 50px;
+    background: rgb(220,220,220);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.icon{
+    width: 30px;
+}
+
 @media screen and (max-width:1400px){
 
     dl{
