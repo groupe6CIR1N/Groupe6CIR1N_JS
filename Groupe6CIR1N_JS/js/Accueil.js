@@ -14,6 +14,35 @@ function dezoom(){
     diagramme.style.width = "800px";
 };
 
-function translate(){
-    let txt = document.getElementsByClassName("txt")[0];
-};
+ 
+function afficherTexteMotParMot() {
+  var texte = "Qui sommes nous ?";
+  var div = document.querySelector(".QSN");
+  var mots = texte.split(" ");
+  var indexMot = 0;
+
+  function afficherMotSuivant() {
+    if (indexMot < mots.length) {
+      div.innerHTML += mots[indexMot] + " ";
+      indexMot++;
+      setTimeout(afficherMotSuivant, 1000);
+    } else {
+      setTimeout(function() {
+        div.classList.add("glisser-droite"); // Ajoute la classe d'animation CSS
+        setTimeout(function() {
+          div.innerHTML = ""; // Vide la div 
+          div.classList.remove("glisser-droite"); // Retire la classe d'animation CSS
+          setTimeout(afficherTexteMotParMot, 2000);// Appelle recursif 
+        }, 1000);
+      }, 1000);
+    }
+  }
+
+  afficherMotSuivant();
+}
+
+
+afficherTexteMotParMot();
+
+main();
+
