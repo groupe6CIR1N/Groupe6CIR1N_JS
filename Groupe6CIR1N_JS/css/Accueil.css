@@ -69,3 +69,24 @@ h1{
     }
     
 }
+
+.QSN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes glisser-droite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+}
+  
+  .glisser-droite {
+    animation: glisser-droite 3s forwards;
+  }
+  
