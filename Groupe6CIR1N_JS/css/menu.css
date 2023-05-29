@@ -122,6 +122,10 @@ header li img{
     border-radius: 100px;
 }
 
+.logo2{
+    display: none;
+}
+
 .timer{
     display: flex;
     flex-direction: row;
@@ -195,6 +199,13 @@ header li img{
   }
 
 @media screen and (max-width:1200px) {
+
+
+    .hours{
+        position: absolute;
+        top:5%;
+        left:90%;
+    }
 
     footer{
         font-size: 0.8em;
@@ -276,9 +287,16 @@ header li img{
     }
     
     .logo{
+        display: none;
+    }
+
+    .logo2{
+        top:40px;
+        margin: 10px;
+        width: 170px;
+        height: 50px;
+        display: block;
         position: absolute;
-        margin-top:40px;
-        margin-left: 50px;
     }
 
     .sub-menu{
