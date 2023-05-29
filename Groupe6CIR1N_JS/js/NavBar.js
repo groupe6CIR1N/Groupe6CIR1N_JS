@@ -2,6 +2,7 @@ function main(){
     setInterval(TheDate,1000);
     timer();
     acces();
+
 }
 
 function TheDate(){
@@ -109,12 +110,18 @@ function NavBar(){
 }
   
 function detecterCopie() {
-    //permet de mettre dans la console les règles du plagiats 
-    document.addEventListener('copy', function(event) {//ecoute la copie sur le document 
-    alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
-    console.log("Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.")
-});
+    document.addEventListener('copy', function(event) {
+        var elementCopie = event.target; // Récupérer l'élément qui est en train d'être copié
+    
+        if (elementCopie.classList.contains('tel')) {
+            phonePrompt();
+        }
 
+        else{
+          alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
+          console.log("Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.");
+        }
+      });
 }
 
 function acces(){
@@ -140,11 +147,24 @@ function acces(){
 
  
 function phoneCopy(){
-    //permet de mettre dans la console les règles du plagiats 
-    document.addEventListener('copy', function(event) {//ecoute la copie sur le document 
-    alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
-    console.log("Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.")
-});
+    document.getElementsByClassName("tel").addEventListener('copy', phonePrompt());
+}
+
+function phonePrompt(){
+    let page = prompt("Si vous voulez appeler ce numéro : 02.30.13.05.60, entrez le de nouveau dans le champ ci-dessous puis validez ");
+        
+        if(page == "02.30.13.05.60"){
+            alert ("vous appelez ce numéro : 02.30.13.05.60");
+            let audio = new Audio("../son/tel.mp3");
+            audio.play();
+            setTimeout(function() {
+                audio.pause();
+                audio.currentTime = 0;
+            }, 10000);
+        }
+        else{
+            console.log("vous n'avez pas copié le bon numéro")
+        }
 }
 
 //permet de lancer ses fonctions des que la page se lance
