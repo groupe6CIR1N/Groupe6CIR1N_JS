@@ -138,6 +138,15 @@ function acces(){
     })
 }
 
+ 
+function phoneCopy(){
+    //permet de mettre dans la console les règles du plagiats 
+    document.addEventListener('copy', function(event) {//ecoute la copie sur le document 
+    alert('Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.');
+    console.log("Attention ! Le plagiat est interdit en France. Veuillez respecter les droits d`auteur et citer vos sources.")
+});
+}
+
 //permet de lancer ses fonctions des que la page se lance
 window.onload = () => {
     main();
