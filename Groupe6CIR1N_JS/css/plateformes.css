@@ -42,6 +42,7 @@ dt{
     margin: 10px;
     padding: 20px;
     text-align: center;
+    cursor: pointer;
 }
 
 dd{
@@ -57,4 +58,119 @@ dd{
 .txt2:hover{
     border-color: black;
     background-color: white;
+}
+
+.modal-container{
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(131, 131, 131);
+    opacity: 90%;
+}
+
+.modal{
+    width: 95%;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.close-modal{
+    padding: 8px 10px;
+    border:none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+}
+
+.modal h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif ;
+    font-weight: 500;
+}
+
+.modal p {
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 150px;
+}
+
+.modal-container2{
+    position:fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.overlay2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(131, 131, 131);
+    opacity: 90%;
+}
+
+.modal2{
+    width: 95%;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.close-modal2{
+    padding: 8px 10px;
+    border:none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background: #ff365e;
+    color: #fff;
+}
+
+.modal2 h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Montserrat, sans-serif ;
+    font-weight: 500;
+}
+
+.modal2 p {
+    line-height: 1.4;
+    margin-bottom: 16px;
 }
