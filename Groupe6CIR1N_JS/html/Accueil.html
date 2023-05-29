@@ -6,8 +6,8 @@
     <title> Accueil </title>
     <link href="../css/menu.css" rel="stylesheet">
     <link href="../css/Accueil.css" rel="stylesheet">
-    <script src="../js/NavBar.js" defer></script>
     <script src="../js/Accueil.js" defer></script>
+    <script src="../js/NavBar.js" defer></script>
 </head>
 
 
@@ -32,7 +32,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="Membres.html" id="4"><img src="../image/Membres.png">Membres</a>
+                        <a href="#" id="4"><img src="../image/Membres.png">Membres</a>
                     </li>
                     <li>
                         <a href="Projets.html" id="5"><img src="../image/Projets.png">Projets</a>
@@ -60,21 +60,26 @@
                 </ul>
             </nav>
             <img src="../image/boutton-menu.png" alt="menu hamburger" class="menu-hamburger">
+            
+            <div class="hours">
+                <div class="date">
+                    <p id="hours-d"></p>
+                    <p>:</p>
+                    <p id="minutes-d"></p>
+                    <p>:</p>
+                    <p id="seconds-d"></p>
+                </div>
+                <div class="timer">
+                    <p id="hours-t"></p>
+                    <p>:</p>
+                    <p id="minutes-t"></p>
+                    <p>:</p>
+                    <p id="seconds-t"></p>
+                </div>
+            </div>
+
+            <img class="logo2" src="../image/LabISEN3.png" alt="LabISEN" onclick="toAccueil()">
         
-            <div class="date">
-                <p id="hours-d"></p>
-                <p>:</p>
-                <p id="minutes-d"></p>
-                <p>:</p>
-                <p id="seconds-d"></p>
-            </div>
-            <div class="timer">
-                <p id="hours-t"></p>
-                <p>:</p>
-                <p id="minutes-t"></p>
-                <p>:</p>
-                <p id="seconds-t"></p>
-            </div>
         </nav>
     </header>
 

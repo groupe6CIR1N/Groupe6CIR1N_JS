@@ -5,6 +5,7 @@
  <title> Projets </title>
  <link href="../css/menu.css" rel="stylesheet">
  <link href="../css/Projets.css" rel="stylesheet">
+ <script src="../js/Projets.js" defer></script>
  <script src="../js/NavBar.js" defer></script>
  </head>
 
@@ -30,7 +31,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="Membres.html" id="4"><img src="../image/Membres.png">Membres</a>
+                        <a href="#" id="4"><img src="../image/Membres.png">Membres</a>
                     </li>
                     <li>
                         <a href="Projets.html" id="5"><img src="../image/Projets.png">Projets</a>
@@ -59,20 +60,24 @@
             </nav>
             <img src="../image/boutton-menu.png" alt="menu hamburger" class="menu-hamburger">
         
-            <div class="date">
-                <p id="hours-d"></p>
-                <p>:</p>
-                <p id="minutes-d"></p>
-                <p>:</p>
-                <p id="seconds-d"></p>
+            <div class="hours">
+                <div class="date">
+                    <p id="hours-d"></p>
+                    <p>:</p>
+                    <p id="minutes-d"></p>
+                    <p>:</p>
+                    <p id="seconds-d"></p>
+                </div>
+                <div class="timer">
+                    <p id="hours-t"></p>
+                    <p>:</p>
+                    <p id="minutes-t"></p>
+                    <p>:</p>
+                    <p id="seconds-t"></p>
+                </div>
             </div>
-            <div class="timer">
-                <p id="hours-t"></p>
-                <p>:</p>
-                <p id="minutes-t"></p>
-                <p>:</p>
-                <p id="seconds-t"></p>
-            </div>
+
+            <img class="logo2" src="../image/LabISEN3.png" alt="LabISEN" onclick="toAccueil()">
         </nav>
     </header>
 
@@ -82,7 +87,8 @@
         <p class="titre1"><b>Projets en cours</b></p>
 
         <dl>
-            <img src="../image/transfo digitale.gif">
+            <img src="../image/transfo digitale.gif" class="photo1" onclick="photo1()">
+            <img src="../image/Antoine le bg.jpg" class="photo5" onclick="photo5()">
             <nav class="texte">
                 <dt class="titre">CASTEL : accompagnement dans la transformation digitale</dt>
                 <dt class="option"><b>Description</b></dt>
@@ -97,7 +103,8 @@
         </dl>
 
         <dl>
-            <img src="../image/Sous matins autonome.jpg">
+            <img src="../image/Sous matins autonome.jpg" class="photo2" onclick="photo2()">
+            <img src="../image/Le retour A.jfif" class="photo6" onclick="photo6()">
             <nav class="texte">
                 <dt class="titre">VISEMAR  : amélioration des performances des drones autonomes sous-marins par vision</dt>
                 <dt class="option"><b>Description</b></dt>
@@ -112,7 +119,8 @@
         </dl>
 
         <dl>
-            <img src="../image/surveillance faune.jpg">
+            <img src="../image/surveillance faune.jpg" class="photo3" onclick="photo3()">
+            <img src="../image/Ayoub le bg.jpg" class="photo7" onclick="photo7()">
             <nav class="texte">
                 <dt class="titre">SEAS : Système d'Étude Autonome et de Surveillance de la faune patrimoniale en milieu protégé</dt>
                 <dt class="option"><b>Description</b></dt>
@@ -129,7 +137,8 @@
         <p class="titre1"><b>Projets achevés</b></p>
 
         <dl>
-            <img src="../image/Architecture élec.jpg">
+            <img src="../image/Architecture élec.jpg" class="photo4" onclick="photo4()">
+            <img src="../image/Le retour.jpg" class="photo8" onclick="photo8()">
             <nav class="texte">
                 <dt class="titre">HPeC : architectures électroniques reconfigurables dynamiquement (2019)</dt>
                 <dt class="option"><b>Description</b></dt>
@@ -142,6 +151,10 @@
                 <dd>Conseil</dd>
             </nav>
         </dl>
+    </div>
+
+    <div class="btn">
+        <img src="../image/arrow_upward_FILL0_wght400_GRAD0_opsz48.png" alt="" class="icon">
     </div>
 
     <footer class="footer">

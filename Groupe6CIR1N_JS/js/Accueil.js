@@ -12,12 +12,11 @@ function dezoom(){
     diagramme.style.height = "400px";
     diagramme.style.width = "800px";
 };
-
-//////////////////////////////////
+/////////////////////////////////
 
  //////Qui sommes nous/////////
 
-function afficherTexteMotParMot() {
+ function afficherTexteMotParMot() {
   var texte = "Qui sommes nous ?";
   var div = document.querySelector(".QSN");
   var mots = texte.split(" ");// spare les mots 
@@ -47,4 +46,5 @@ afficherTexteMotParMot();
 ///////////////////////////////
 
 main();
+
 
