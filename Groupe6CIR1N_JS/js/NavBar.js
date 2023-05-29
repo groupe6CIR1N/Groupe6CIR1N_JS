@@ -120,7 +120,7 @@ function acces(){
         let page = prompt("Voulez vous vraiment naviguer vers cette page ?");
         
         if(page.toLowerCase() == "oui"){
-            document.location.href = "../html/Accueil.html";
+            document.location.href = "../html/Membres.html";
         }
         else{
             document.location.href = "";
