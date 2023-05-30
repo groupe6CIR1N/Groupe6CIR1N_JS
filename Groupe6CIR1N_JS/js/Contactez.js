@@ -14,6 +14,10 @@ function main(){
         boutton.style.color = 'blue';
         boutton.disabled = false;
     }
+    else{
+        boutton.style.color = 'red';
+        boutton.disabled = true;
+    }
    },100)
 
 
@@ -33,6 +37,8 @@ function name_(){
         return 1;
     }
     else{
+        error.style.color = 'red'
+        error.innerHTML = 'Il n\'y a pas votre Prénom et Nom'
         console.log('c\'est pas bon n');
         return 0;
     }
@@ -50,6 +56,8 @@ function mail_(){
         return 1;
     }
     else{
+        error.style.color = 'red'
+        error.innerHTML = 'Il n\'y a pas les caractères souhaitez (\'@\' et \'.\')'
         console.log('c\'est pas bon m');
         return 0;
     }
@@ -67,6 +75,8 @@ function text_(){
         return 1;
     }
     else{
+        error.style.color = 'red'
+        error.innerHTML = 'Il n\'y a pas assez de caractères'
         console.log('c\'est pas bon t');
         return 0;
     }
