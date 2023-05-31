@@ -61,7 +61,7 @@ dt{
     text-align: center;
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1200px){
     .contenu{
         font-size: 0.8em;
     }

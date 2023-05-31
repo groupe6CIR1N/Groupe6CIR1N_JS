@@ -39,7 +39,7 @@ textarea {
     letter-spacing: 1px;
 }
 
-imput, textarea {
+input{
     padding: 10px;
     max-width: 100%;
     line-height: 1.5;
@@ -53,14 +53,14 @@ imput, textarea {
     margin-bottom: 10px;
 }
 
-imput{
+p input{
     border-radius: 5px;
     box-shadow: 1px 1px 1px #999;
 }
 
-footer{
+.footer{
     position: absolute;
-    bottom: 0;
+    bottom: -10;
 }
 
 .error{

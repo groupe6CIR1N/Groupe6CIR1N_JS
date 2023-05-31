@@ -8,7 +8,7 @@ h1{
         padding-right: 5%;
     }
 }
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1200px) {
     .page{
         padding-left: 10%;
         padding-right: 10%;

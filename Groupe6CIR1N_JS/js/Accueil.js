@@ -4,13 +4,12 @@ function main(){
 ///////Zoom sur le schéma des compétences////////
 function zoom(){
     let diagramme = document.getElementsByClassName("diagramme")[0];
-        diagramme.style.height = "600px";
-        diagramme.style.width = "1200px";
+      diagramme.style.width = "100%";
 };
+
 function dezoom(){
     let diagramme = document.getElementsByClassName("diagramme")[0];
-    diagramme.style.height = "400px";
-    diagramme.style.width = "800px";
+      diagramme.style.width = "50%";
 };
 /////////////////////////////////
 

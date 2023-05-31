@@ -115,7 +115,7 @@ li{
     border-color: black;
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width:1200px){
     .chercheur{
         font-size: 0.8em;
     }
