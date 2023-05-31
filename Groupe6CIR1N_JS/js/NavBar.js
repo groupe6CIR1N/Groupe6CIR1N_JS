@@ -140,7 +140,6 @@ function acces(){
         }
         else{
             console.log("Veuillez répondre par oui ou non")
-            page = prompt("Voulez vous vraiment naviguer vers cette page ?");
         }
 
     })

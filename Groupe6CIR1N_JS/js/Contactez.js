@@ -20,8 +20,6 @@ function main(){
     }
    },100)
 
-
-
 }
 
 function name_(){
@@ -82,6 +80,7 @@ function text_(){
     }
 };
 
+
 function choice(){
     let page = prompt("Choisissez entre pile ou face?");
     let result = tossCoin();
@@ -106,6 +105,7 @@ function choice(){
     }
 }
 
+//fonction qui permet de faire de l'aléatoire
 function getRandomNumber() {
     return Math.random();
   }
