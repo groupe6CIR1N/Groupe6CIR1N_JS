@@ -33,13 +33,13 @@ function name_(){
         //Si elle le sont en change le texte sous la saisie utilisateur et on renvoie 1
         error.style.color = 'blue'
         error.innerHTML = 'C\'est good!!'
-        console.log('c\'est bon n')
+        //console.log('c\'est bon n')
         return 1;
     }
     else{
         error.style.color = 'red'
         error.innerHTML = 'Il n\'y a pas votre Prénom et Nom'
-        console.log('c\'est pas bon n');
+        //console.log('c\'est pas bon n');
         return 0;
     }
 };
@@ -52,13 +52,13 @@ function mail_(){
     if(mail.indexOf(".") !==-1 && mail.indexOf("@") !==-1){
         error.style.color = 'blue'
         error.innerHTML = 'C\'est good!!'
-        console.log('c\'est bon m')
+        //console.log('c\'est bon m')
         return 1;
     }
     else{
         error.style.color = 'red'
         error.innerHTML = 'Il n\'y a pas les caractères souhaitez (\'@\' et \'.\')'
-        console.log('c\'est pas bon m');
+        //console.log('c\'est pas bon m');
         return 0;
     }
 };
@@ -71,15 +71,52 @@ function text_(){
     if(text.length > 20){
         error.style.color = 'blue'
         error.innerHTML = 'C\'est good!!'
-        console.log('cest bon t');
+        //console.log('cest bon t');
         return 1;
     }
     else{
         error.style.color = 'red'
         error.innerHTML = 'Il n\'y a pas assez de caractères'
-        console.log('c\'est pas bon t');
+        //console.log('c\'est pas bon t');
         return 0;
     }
 };
+
+function choice(){
+    let page = prompt("Choisissez entre pile ou face?");
+    let result = tossCoin();
+    console.log(result);
+
+    if(page.toLowerCase() == 'pile' || page.toLowerCase() == 'face'){
+        if(page.toLowerCase() == result){
+            alert("Vous avez gagné ;)");
+            document.location.href = "../html/Accueil.html";
+            return true;
+        }
+        else{
+            alert("Vous avez perdu :(")
+            window.reload();
+            return false;
+        }
+    }
+    else{
+        alert("Il y a une erreur rentrer pile ou face")
+        window.reload();
+    }
+}
+
+function getRandomNumber() {
+    return Math.random();
+  }
+
+function tossCoin() {
+    var randomNumber = getRandomNumber();
+    if (randomNumber < 0.5) {
+      return "pile";
+    } 
+    else {
+      return "face";
+    }
+  }
 
 main()
