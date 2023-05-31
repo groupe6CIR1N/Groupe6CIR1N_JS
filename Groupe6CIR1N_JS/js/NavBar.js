@@ -97,11 +97,11 @@ function Antinavbar(){
 function NavBar(){
         //permet de faire le "flou" en arrière plan 
         let header = document.getElementsByClassName("navbar")[0];
-        header.style.opacity = "0.2"; 
+        header.style.opacity = "0"; 
         let footer = document.getElementsByClassName("footer")[0];
-        footer.style.opacity = "0.2";
+        footer.style.opacity = "0";
         let contenu = document.getElementsByClassName("contenu")[0];
-        contenu.style.opacity = "0.2";
+        contenu.style.opacity = "0";
         //permet d'afficher notre loader
         let loader = document.getElementsByClassName("lds-heart")[0];
         loader.style.display = "inline-block";
