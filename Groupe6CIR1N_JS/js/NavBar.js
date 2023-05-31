@@ -148,7 +148,7 @@ function acces(){
 
  
 function phoneCopy(){
-    document.getElementsByClassName("tel").addEventListener('copy', phonePrompt());
+    document.getElementsByClassName("tel").addEventListener('click', phonePrompt());
 }
 
 function phonePrompt(){
