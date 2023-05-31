@@ -87,10 +87,11 @@ function choice(){
     let result = tossCoin();
     console.log(result);
 
+
     if(page.toLowerCase() == 'pile' || page.toLowerCase() == 'face'){
         if(page.toLowerCase() == result){
             alert("Vous avez gagné ;)");
-            document.location.href = "../html/Accueil.html";
+            window.location.href = "../html/Accueil.html";
             return true;
         }
         else{
